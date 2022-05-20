@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first app</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="header" class="label">
+        <button onclick="registration()" class="button btn1" style="content: \270e;" id="reg">Регистрация</button>
+        <div id="registration">
+                <label>Имя:</label>
+                <input type="text" name="name" id="regName">
+                <label>Логин:</label>
+                <input type="text" name="login" id="regLogin">
+                <label>Пароль:</label>
+                <input type="text" name="password" id="regPassword">
+            <button type="submit" onclick="addNewUser()" class="button">Отправить</button>
+        </div>
+    <button onclick="authorization()" class="button btn2" style="content: \263a;" id="auth">Войти</button>
+        <div id="authorization">
+                <label>Логин:</label>
+                <input type="text" name="login" id="login">
+                <label>Пароль:</label>
+                <input type="text" name="password" id="password">
+            <button type="button" onclick="getTokenData()" class="button">Отправить</button>
+        </div>
+        <div id="upload">
+            <div class="label">Добавить фото: <input type="file" name="multipleFiles" multiple="multiple" /></div>
+            <input type="submit" value="Загрузить" onclick="uploadImage()" />
+        </div>
+    </header>
+    <div id="container">
+        <div id="containerImg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div id="row"> 
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "my_first_app",
+  "version": "1.0.0",
+  "description": "Создать приложение которые позволит просматривать все картинки на лежащие сервере, регистрироваться и загружать картинки на сервер авторизированным пользователям.",
+  "main": "backend/app.mjs",
+  "scripts": {
+    "dev": "nodemon ./backend/app.mjs"
+  },
+  "keywords": [],
+  "author": "Alina",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.11.27",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "find-my-way": "^5.5.0",
+    "formidable": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "serve-static": "^1.15.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanSkooter/my-first-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlanSkooter/my-first-app/issues"
+  },
+  "homepage": "https://github.com/AlanSkooter/my-first-app#readme"
+}

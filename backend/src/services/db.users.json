@@ -1,0 +1,26 @@
+[
+    {
+        "id": "11ea1ad8-14a0-4def-80e0-790ec4ff263f",
+        "name": "Ruslan",
+        "login": "Rusik",
+        "password": "$2b$10$Nj146afq8B92UUuDPwA7muXEVlK.HyEKCDKmPD18LJyyRIL468bfu"
+    },
+    {
+        "id": "47c51d3c-3727-4a0c-bcbf-9d0257fd1f62",
+        "name": "Denis",
+        "login": "Den",
+        "password": "$2b$10$Nj146afq8B92UUuDPwA7mutTrAuJHhcjDpYMZHpBWUHxct8Q7Eq7a"
+    },
+    {
+        "id": "87f5b903-f6bc-4514-8f6c-580d2eab7d9c",
+        "name": "Alina",
+        "login": "Alan",
+        "password": "$2b$10$Nj146afq8B92UUuDPwA7mumG8X4NrayOwv3X1sVh/GMUTMaf4p4UO"
+    },
+    {
+        "id": "6575eb6e-0986-4e79-9df8-b759fae8f2c5",
+        "name": "Arm",
+        "login": "Arm",
+        "password": "$2b$10$Nj146afq8B92UUuDPwA7mumG8X4NrayOwv3X1sVh/GMUTMaf4p4UO"
+    }
+]
