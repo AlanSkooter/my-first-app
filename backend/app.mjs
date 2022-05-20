@@ -3,6 +3,9 @@ import serveStatic from 'serve-static';
 import path from 'path';
 import router from './src/services/router.mjs';
 
+const host = 'localhost';
+const port = '8080';
+
 const frontendPath = path.resolve(process.cwd(), './frontend/');
 const serve = serveStatic(frontendPath, {
     index: ['index.html']
@@ -14,6 +17,6 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(3000, 'localhost', () => {
-    console.log('Server listining for localhost:3000');
+server.listen(port, host, () => {
+    console.log(`Server listining for ${host}:${port}`);
 });
