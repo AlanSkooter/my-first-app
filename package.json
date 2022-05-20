@@ -29,5 +29,6 @@
   "bugs": {
     "url": "https://github.com/AlanSkooter/my-first-app/issues"
   },
-  "homepage": "https://github.com/AlanSkooter/my-first-app#readme"
+  "homepage": "https://github.com/AlanSkooter/my-first-app#readme",
+  "proxy": "http://localhost:8000"
 }
