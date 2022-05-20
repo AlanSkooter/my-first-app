@@ -1,7 +1,7 @@
 let slideIndex = 1;
 
 (async () => {
-    const pets = (await fetch('http://127.0.0.1:3000/pets/images/').then((res) => res.json())) || [];
+    const pets = (await fetch('http://localhost:3000/pets/images/').then((res) => res.json())) || [];
     const container = document.getElementById('containerImg');
     const row = document.getElementById('row');
     for (i = 0; i < pets.length; i++) {
@@ -61,7 +61,7 @@ const getTokenData = async () => {
     login: login,
     password: password
   };
-  await fetch('http://127.0.0.1:3000/login', {
+  await fetch('http://localhost:3000/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ const addNewUser = async () => {
     login: login,
     password: password
   };
-  await fetch('http://127.0.0.1:3000/reg', {
+  await fetch('http://localhost:3000/reg', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -119,7 +119,7 @@ const uploadImage = async () => {
   const token = localStorage.getItem('token');
   const string = token.split(':')[1].split('"')[1];
   try {
-    await fetch('http://127.0.0.1:3000/image/upload', {
+    await fetch('http://localhost:3000/image/upload', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${string}`
