@@ -4,7 +4,7 @@ import path from 'path';
 import router from './src/services/router.mjs';
 
 const host = 'localhost';
-const port = '8080';
+const port = '8000';
 
 const frontendPath = path.resolve(process.cwd(), './frontend/');
 const serve = serveStatic(frontendPath, {
