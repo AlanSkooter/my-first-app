@@ -94,22 +94,26 @@ const addNewUser = async () => {
     login: login,
     password: password
   };
-  await fetch('/reg', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(user)
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      document.getElementById('registration').style.display = 'none';
-      alert('Регистрация прошла успешно!')
+  if (user.name === '' || user.login === '' || user.password === '') {
+    alert('Введите корректные данные!');
+  } else {
+    await fetch('/reg', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(user)
     })
-    .catch((error) => {
-      console.error(error);
-    });
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        document.getElementById('registration').style.display = 'none';
+        alert('Регистрация прошла успешно!')
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
 }
 
 const uploadImage = async () => {

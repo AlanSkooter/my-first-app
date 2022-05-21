@@ -22,5 +22,11 @@
         "name": "Arm",
         "login": "Arm",
         "password": "$2b$10$Nj146afq8B92UUuDPwA7mumG8X4NrayOwv3X1sVh/GMUTMaf4p4UO"
+    },
+    {
+        "id": "67327cde-495e-40db-b309-66abed9568d2",
+        "name": "Armond",
+        "login": "Armonster",
+        "password": "$2b$10$Nj146afq8B92UUuDPwA7mu.uCC3epfj/j/EuJC9r/11bzU38VNw1K"
     }
 ]
